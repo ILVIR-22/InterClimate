@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons//favicon-16x16.png">
+    <link rel="manifest" href="favicons//site.webmanifest">
+    <link rel="mask-icon" href="favicons//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index">
+    <meta name="keywords" content="INTERclimate, кондиционеры">
+    <meta name="copyright" content="Интернет-решения">
+    <meta name="description" content="Сайт продажи и установки кондиционеров">
+    <title>INTERclimate кондиционеры</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css"> 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+
+                <div class="header-logo">
+                    <img src="icons/logo.png" alt="INTERclimate">
+                </div>
+
+                <div class="header-logo-text">
+                    10 лет на рынке
+                    Группа компаний
+                </div>
+                <div class="header-control-city">
+                    <div id="cities" class="menu">
+                        <span class="title-city">Город:&nbsp;</span>
+                        <span class="title">Уфа</span>
+                            <ul>
+                                <li>
+                                    <a href="#" class="city">Стерлитамак</a>                    
+                                </li>
+                                <li>
+                                    <a href="#" class="city">Ташкент</a>    
+                                </li>
+                                <li>
+                                    <a href="#" class="city">Душанбе</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>  
+
+                <div class="header-chart">
+                    <span class="chart">График работы: </span>
+                    <span class="chart">Пн-пт 9:00 - 21:00</span>
+                    <span class="chart">Сб 10:00 - 13:00</span>
+                </div>
+
+                <div class="header-contacts">
+                    <a href="tel:+78000000000" class="head-contacts__val">8(800)000-00-00</a>
+                    <div class="header-contacts__bell" onclick="popup('Заказать звонок','Запрос звонка с сайта');">Заказать звонок</div>
+                </div>
+
+                
+                <div class="popup">
+
+                    <div class="popup-main">
+                        
+                        <div class="popup-close" onclick="closePopup();">
+                            <svg id="popup-close" viewBox="0 0 12 12" width="12" height="12">
+                                <path d="M1.44659 0.246055C1.11566 -0.0820184 0.579121 -0.0820184 0.248195 0.246055C-0.0827314 0.574129 -0.0827314 1.10604 0.248195 1.43411L4.85378 6L0.248195 10.5659C-0.0827316 10.894 -0.0827316 11.4259 0.248195 11.7539C0.579122 12.082 1.11566 12.082 1.44659 11.7539L6 7.23978L10.5534 11.7539C10.8843 12.082 11.4209 12.082 11.7518 11.7539C12.0827 11.4259 12.0827 10.894 11.7518 10.5659L7.14622 6L11.7518 1.43411C12.0827 1.10604 12.0827 0.574129 11.7518 0.246055C11.4209 -0.0820184 10.8843 -0.0820184 10.5534 0.246055L6 4.76022L1.44659 0.246055Z" class="close-up"></path>
+                            </svg>
+                        </div>
+            
+                        <div class="popup-block">
+                            
+                            <div class="popup-block__title" id="bell">Заказать звонок</div>           
+                        
+                            <div class="popup-block__item">
+                                <input type="text" class="popup-block__item-input" name="name" autocomplete="off" required="" id="placeholder">
+                                <label class="popup-block__item-label">Ваше имя</label>
+                            </div>                               
+            
+                            <div class="popup-block__item">
+                                <input type="tel" class="popup-block__item-input" name="phone" autocomplete="off" required="" inputmode="text">
+                                <label class="popup-block__item-label">Номер телефона</label>
+                            </div>
+            
+                            <div class="popup-block__item">
+                                <textarea class="popup-block__item-input popup-block__item-textarea" name="text" autocomplete="off" required="" id="mes"></textarea>
+                                <label class="popup-block__item-label-mes">Сообщение</label>
+                            </div>
+            
+                            <input type="hidden" name="topic" value="">
+                            <div class="popup-block__polit">
+                                Отправляя любую форму на сайте, вы<br> соглашаетесь с <span><a href="#">политикой конфиденциальности</a></span><br> данного сайта.
+                            </div>
+                            
+                            <div class="btn-green popup-block__btn popup-form__btn-send" id="close" onclick="fosPopupSend();">Отправить</div>
+                        </div>
+                    </div>
+            
+                </div>
+
+            </div>
+            <nav>
+                <ul class="navigation-conteiner__list">
+        
+                    <li class="navigation-conteiner__item">
+                        <a href="#" class="navigation-conteiner__text">Преимущества</a>    
+                    </li>
+                    <li class="navigation-conteiner__item">
+                        <a href="#" class="navigation-conteiner__text">Бренды</a>
+                    </li>
+                    <li class="navigation-conteiner__item">
+                        <a href="#" class="navigation-conteiner__text">Каталог</a>
+                    </li>
+                    <li class="navigation-conteiner__item">
+                        <a href="#" class="navigation-conteiner__text">Хиты продаж</a>
+                    </li>
+                    <li class="navigation-conteiner__item">
+                        <a href="#" class="navigation-conteiner__text">Услуги</a>
+                    </li>
+                            
+                </ul> 
+            </nav>
+        </header>
+
+        <div class="slider">
+            <div class="slider-container">
+
+            <div>
+                <div class="banner-1">
+
+                    <div class="banner-block">
+                        <div class="banner-1__title">ГАРАНТИЯ НА МОНТАЖ 
+                                                   <span>24 МЕСЯЦЕВ</span></div>
+                        <div class="banner-1__title">ГАРАНТИЯ НА ПРОДУКЦИЮ 
+                                                   <span>ДО 5 ЛЕТ</span></div>
+                        <div class="banner-1__text">
+                            <a href="#" class="banner-1__link">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div>
+                <div class="banner-2">
+                    <div class="banner-block" id="banner">
+                        <div class="banner-block02">
+                            <div class="banner-2__title01">ДОВЕРЬТЕСЬ ПРОФЕССИОНАЛАМ</div>
+                            <div class="banner-2__title02">ПОДОБРАТЬ КОНДИЦИОНЕР!</div>
+                            <div class="banner-2__title03">Для квартиры, коттеджа и офиса</div>
+                            <div class="banner-1__text">
+                                <a href="#" class="banner-1__link">Узнать подробнее</a>
+                            </div>
+                        </div>
+                     
+                    </div>                        
+                </div>
+            </div>
+          
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-conteiner">
+
+                <address class="footer-address">
+                    <div class="footer-address-phone">
+                        <a href="tel:+78000000000" class="footer-address-val">8 (800) 000 - 00 - 00</a>
+                    </div>                   
+                    <div class="footer-address-text">г. Уфа, улица Проспект октября 111, офис 111</div>
+                    <div class="footer-address-order">
+                        <div class="footer-address-order__text" onclick="popup('Заказать звонок','Запрос звонка с сайта');">Заказать звонок</div>                       
+                    </div>
+                </address>
+
+                <div class="footer-copyright">
+                    <div class="footer-copyright__logo">
+                        <a href="https://www.site-rb.ru/" target="_blank">
+                            <img src="icons/logo-footer.png" alt="logo" class="footer-copyright__img">
+                        </a>
+                    </div>
+                    <p class="copyright-group">© 2020 Интерклимат | Все права защищены</p>    
+                    <p class="copyright-confidential">Отправляя любую форму на сайте, вы соглашаетесь <br> с <a href="#" class="copyright-confidential-text">политикой конфиденциальности</a>  данного сайта.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="scrollup">
+
+        </div>
+
+        <script>
+            let menuElem = document.getElementById('cities');
+            let titleElem = menuElem.querySelector('.title');
+            titleElem.onclick = function() {
+                menuElem.classList.toggle('open');
+            };
+        </script> 
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>      
+    <script src="js/form.js"></script>
+        <script>
+            $(function() {            
+            $('.scrollup').click(function() {            
+                $("html, body").animate({
+                scrollTop:0
+                },800);
+            })
+            })
+        
+            $(window).scroll(function() {            
+            if ($(this).scrollTop()>150) {            
+                $('.scrollup').fadeIn();
+            }
+            else {
+                $('.scrollup').fadeOut();
+            }
+            });
+        </script>
+
+
+</body>
+</html>
